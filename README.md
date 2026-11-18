@@ -23,7 +23,7 @@ Windows: pantalla virtual → FFmpeg (chip de video de la laptop) → pantalla.p
    crea una pantalla extra "fantasma" en Windows. En su configuración elige la resolución de tu iPad
    (ver tabla abajo) y quita las demás.
 
-**Resolución según tu iPad (horizontal):**
+**Resolución según tu iPad (horizontal).** El iPad con chip A16 (11.ª generación) usa **2360 × 1640**.
 
 | iPad | Resolución |
 |---|---|
