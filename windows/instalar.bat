@@ -13,12 +13,8 @@ echo [2/3] FFmpeg...
 where ffmpeg >nul 2>nul && (echo FFmpeg ya esta instalado.) || winget install -e --id Gyan.FFmpeg --accept-source-agreements --accept-package-agreements
 
 echo.
-echo [3/3] Driver USB de Apple (app Apple Devices)...
-winget install --id 9NP83LWLPZ9K -s msstore --accept-source-agreements --accept-package-agreements
-if errorlevel 1 (
-  echo No se pudo instalar Apple Devices desde la Store. Probando con iTunes...
-  winget install -e --id Apple.iTunes --accept-source-agreements --accept-package-agreements
-)
+echo [3/3] iTunes (version de apple.com, la que necesita Sideloadly)...
+if exist "%ProgramFiles%\iTunes\iTunes.exe" (echo iTunes ya esta instalado.) else (winget install -e --id Apple.iTunes --accept-source-agreements --accept-package-agreements)
 
 echo.
 echo  Listo. Cierra esta ventana y abre una nueva antes de usar iniciar.bat.

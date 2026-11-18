@@ -17,7 +17,7 @@ Windows: pantalla virtual → FFmpeg (chip de video de la laptop) → pantalla.p
 
 1. **Python 3**: `winget install Python.Python.3.12`
 2. **FFmpeg 6.1 o superior**: `winget install Gyan.FFmpeg`
-3. **Apple Devices** (Microsoft Store) o iTunes: instala el driver USB del iPad.
+3. **iTunes de apple.com** (no el de la Microsoft Store): instala el driver USB del iPad y es el que pide Sideloadly. `windows\instalar.bat` instala Python, FFmpeg e iTunes por ti.
 4. **Sideloadly** (sideloadly.io): instala la app en el iPad con tu Apple ID gratis.
 5. **Virtual Display Driver** (github.com/VirtualDrivers/Virtual-Display-Driver, sección Releases):
    crea una pantalla extra "fantasma" en Windows. En su configuración elige la resolución de tu iPad
